@@ -10,10 +10,11 @@
 
           // $("#display").one("click", function(){
           //   $.ajax({
-          //      url : "list.json",
-          //      type : "get",
-          //      dataType : "json",
+          //      url : "https://raw.githubusercontent.com/Coda-Wikicoda/Shops-List/master/list.json",
+          //     //  dataType : "json",
           //     success: function (data) {
+          //       data=JSON.parse(data);
+          //
           //       $.each( data,function(index ,d){
           //         $("#shopslist").append("<li><b>" + d.name + " </b>: " + d.city + "</li>" );
           //       });
@@ -26,7 +27,7 @@
 
         // Using the getJSON method :
 
-        $.getJSON('list.json',function(data){
+        $.getJSON("https://raw.githubusercontent.com/Coda-Wikicoda/Shops-List/master/list.json",function(data){
           $.each(data,function(index,d){
             $('#shopslist').append('<div class="shopslist"><li><b>' + d.name + ' </b>: ' + d.city + '</li></div>' );
           });
@@ -36,6 +37,7 @@
               $(this).toggleClass('active');
               $('#shopslist').slideToggle(800);
             });
+
       </script>
   </section>
 <?php include("./footer.html"); ?>
