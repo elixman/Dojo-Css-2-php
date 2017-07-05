@@ -1,0 +1,241 @@
+/****************************
+      ===== All =====
+****************************/
+  *{
+    /*border: 1px dotted;*/
+    letter-spacing: 3px;
+  }
+/****************************
+     ===== Header =====
+****************************/
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .headerlist{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  .logo-image{
+    margin-left: 150px;
+    width:60%;
+  }
+/**** === Menu === ****/
+  nav{
+    margin-right: 150px;
+  }
+  nav ul a{
+    display:block;
+    padding: 5px;
+    border: 1px solid black;
+    border-top: none;
+    text-decoration: none;
+    color:black;
+  }
+  nav li{
+    padding-right: 40px;
+    font-family: "Josefin Sans";
+    color:black;
+    font-weight:500;
+    font-size: 15px;
+    line-height:30px;
+  }
+  nav li:hover .sub-menu{
+    display: block;
+  }
+  .sub-menu{
+    position:absolute;
+    display:none;
+    margin-left: -50px;
+    padding-top: 10px;
+  }
+
+/****************************
+  ===== Main Section =====
+****************************/
+  section img{
+    padding-top: 30px;
+    width: 90%;
+  }
+  .welcome-image{
+    width:50%;
+  }
+  .our-story-image{
+    width:50%;
+  }
+  .welcome-title{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+  .welcome-title h2{
+    margin-left: -450px;
+  }
+  .welcome-title hr{
+    background-color: black;
+  }
+  article {
+    flex: 1;
+  }
+  article ul{
+    padding: 0;
+  }
+  article ul li {
+    margin-bottom: 15px;
+  }
+  ul {
+    list-style: none;
+  }
+  .main-content{
+    text-align: center;
+  }
+/**** === Page 2 === ****/
+  .text-page2{
+    margin: auto;
+    width:50%;
+  }
+  .text-page2 p{
+    text-align: left;
+  }
+/**** === Page 3 === ****/
+  .div-hr {
+    width: 50%;
+  }
+  .main-content{
+    width: 50%;
+    box-shadow: 1px 1px 10px #aaa;
+  }
+  .main-content-links {
+    margin:auto;
+    flex-direction: row;
+  }
+  .main-content ul{
+    display: flex;
+    justify-content: flex-start;
+    padding-right:5px;
+    padding-left: 17px;
+    color:white;
+  }
+  .main-content li{
+    margin-right:3px;
+    padding: 5px;
+    background-color: #e1b3a2;
+    font-family: "Josefin Sans";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .text-page3{
+    margin: auto;
+    width:95%;
+    text-align: left;
+  }
+  .read-more-button{
+    margin-top: 25px;
+    width:100%;
+    height:40px;
+    border-style: none;
+    background-color: #e1b3a2;
+    color:white;
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  h2{
+    text-align: center;
+  }
+  #display{
+    margin-bottom: 20px;
+    margin-left: 46%;
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+  }
+/**** === Page 4 === ****/
+  #shopslist{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 360px;
+  }
+/****************************
+     ===== Footer =====
+****************************/
+  footer{
+    padding-top: 50px;
+    background-color: #F7F7F7;
+  }
+  footer ul li{
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  footer ul{
+    margin: 30px 0 80px 0;
+  }
+  footer section {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .email{
+    margin:10px 0 10px 10px;
+  }
+  p, .email{
+    letter-spacing: 1px;
+  }
+  .submit-button{
+    padding-top: 5px;
+    height:35px;
+    width: 120px;
+    background-color: black;
+    color:white;
+    border-radius: 4px;
+    font-family: "sans-serif","Josefin Sans";
+    font-weight: bolder;
+  }
+  h5{
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  input{
+    border:none;
+  }
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border:1px solid grey;
+    border-radius: 4px;
+    background-color: white;
+    border-color: #e5e5e5;
+  }
+  hr{
+    margin-bottom: 30px;
+    margin-top: -15px;
+    padding: 0px;
+    background-color: black;
+  }
+  .list-footer {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  .center-footer{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
