@@ -8,28 +8,28 @@
 
           // Using the Ajax method :
 
-          // $("#display").one("click", function(){
-          //   $.ajax({
-          //      url : "https://raw.githubusercontent.com/Coda-Wikicoda/Shops-List/master/list.json",
-          //     //  dataType : "json",
-          //     success: function (data) {
-          //       data=JSON.parse(data);
-          //
-          //       $.each( data,function(index ,d){
-          //         $("#shopslist").append("<li><b>" + d.name + " </b>: " + d.city + "</li>" );
-          //       });
-          //     },
-          //     error : function() {
-          //       $("#shopslist").html("The content you're looking for couldn't be loaded");
-          //     }
-          //   });
-          // });
+          $("#display").one("click", function(){
+            $.ajax({
+               url : "https://raw.githubusercontent.com/Coda-Wikicoda/Shops-List/master/list.json",
+              //  dataType : "json",
+              success: function (data) {
+                data=JSON.parse(data);
+
+                $.each( data,function(index,value){
+                  $("#shopslist").append("<li><b>" + value.name + " </b>: " + value.city + "</li>" );
+                });
+              },
+              error : function() {
+                $("#shopslist").html("The content you're looking for couldn't be loaded");
+              }
+            });
+          });
 
         // Using the getJSON method :
 
         $.getJSON("https://raw.githubusercontent.com/Coda-Wikicoda/Shops-List/master/list.json",function(data){
-          $.each(data,function(index,d){
-            $('#shopslist').append('<div class="shopslist"><li><b>' + d.name + ' </b>: ' + d.city + '</li></div>' );
+          $.each(data,function(index,value){
+            $('#shopslist').append('<div class="shopslist"><li><b>' + value.name + ' </b>: ' + value.city + '</li></div>' );
           });
         });
             $('#shopslist').hide()
